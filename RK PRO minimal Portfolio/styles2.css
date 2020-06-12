@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/*-------global-------*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    width: 100%;
+}
+
+nav {
+    line-height: 150px;
+    text-align: left;
+}
+
+.navcontent a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #2b9dff;
+}
+
+
+
+
+
+main {
+    padding: 0 5%;
+    color: black;
+    text-align: center;
+    font-size: 19px;
+}
+
+
+header {
+    height: auto;
+    min-height: auto;
+    padding: 0 5%;
+    background-image: url(/Images/Path\ 556.png);
+    background-repeat: no-repeat;
+    background-position-x: 1470px;
+    background-position-y: -60px;
+    color: #2b9dff;
+}
+
+.callToAction {
+    position: relative;
+    margin-top: 50px;
+}
+
+.btnFilled {
+    display: block;
+    text-decoration: none;
+    color: white;
+    background-color: #2b9dff;
+    border-radius: 6px;
+    width: 175px;
+    height: 53px;
+    line-height: 53px;
+    text-align: center;
+    margin-top: 30px;
+    align-content: center;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.mission {
+    text-align: left;
+    font-size: large;
+    padding: 0 5%;
+}
+
+.about h1 {
+    font-size: 9rem;
+    text-align: right;
+    opacity: .1;
+    color: #2b9dff;
+    padding: 0 5%;
+}
+
+.services {
+    text-align: middle;
+    font-size: large;
+    padding: 0 5%;
+    margin-top: 50px;
+}
+
+.services ul {
+    text-align: middle;
+    font-size: large;
+    padding: 0 5%;
+    font-style: italic;
+}
+
+.about h5 {
+    color: #2b9dff;
+}
+
+.fields {
+    text-align: center;
+    color: red;
+}
+
+form input,
+form textarea {
+    display: block;
+    width: 500px;
+    padding: 20px;
+    background-color: white;
+    border: 3px solid #2b9dff;
+    margin: 10px 0;
+    outline: none;
+    font-size: large;
+    color: black;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    opacity: .7;
+}
+
+form input:last-child {
+    width: 150px;
+    background-color: #2b9dff;
+    border: none;
+    cursor: pointer;
+}
+
+.social {
+    display: flex;
+    margin-top: -500px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    position: absolute;
+    padding: 0 5%;
+}
+
+.social a {
+    padding: 15px;
+    color: #2b9dff;
+    font-size: 20px;
+}
+
+.social a:hover {
+    opacity: 0.7;
+}
+
+.panel{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px 25px;
+    position: relative;
+    width: 100%;
+    z-index: 10;
+}
+
+.PricingTable{
+    box-shadow: 0px 10px 13px -6px rgba(0, 0, 0, 0.08), 0px 20px 31px 3px rgba(0, 0, 0, 0.09), 0px 8px 20px 7px rgba(0, 0, 0, 0.02);
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 900px) {
+    .PricingTable{
+        flex-direction: row;
+    }
+}
+
+.PricingTable *{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.pricingPlan{
+    border-bottom: 1px solid #e1f1ff;
+    padding: 25px;
+}
+
+.pricingPlan:last-child{
+    border-bottom: none;
+}
+
+@media(min-width:900px){
+    .pricingPlan{
+        border-bottom: none;
+        border-right: 1px solid #e1f1ff;
+        flex-basis: 100%;
+        padding: 25px 50px;
+    }
+
+    .pricingPlan:last-child{
+        border-right: none;
+    }
+
+}
+
+.pricing-img{
+    margin-bottom: 25px;
+    max-width: 100%;
+}
+
+.pricing-header{
+    color:#888;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.pricingFeatures{
+    color: #016ff9;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 50px 0 25px;
+}
+
+.pricingFeaturesItem{
+    border-top: 1px solid #e1f1ff;
+    font-size: 12px;
+    line-height: 1.5;
+    padding: 15px 0;
+}
+
+.pricingFeaturesItem:last-child{
+    border-bottom: 1px solid #e1f1ff;
+}
+
+.pricingPrice{
+    color: #2b9dff;
+    display: block;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.pricingButton{
+    border: 1px solid #2b9dff;
+    border-radius: 10px;
+    color: white;
+    display: inline-block;
+    margin: 25px;
+    padding: 15px 35px;
+    text-decoration: none;
+    transition: all 150ms ease-in-out;
+    background-color: #2b9dff;
+}
+
+.pricingButton:hover,.pricingButton:focus{
+    background-color:white;
+    color: #2b9dff;
+}
+
+/*-------Media queries responsive-------*/
+@media only screen and (max-width: 1000px) {
+    form input,
+    form textarea {
+        display: block;
+        width: 500px;
+        padding: 20px;
+        background-color: white;
+        border: 3px solid #2b9dff;
+        margin: 10px 0;
+        outline: none;
+        font-size: large;
+        color: black;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        transform: translateX(-50%);
+        opacity: .7;
+    }
+    
+    form input:last-child {
+        width: 150px;
+        background-color: #2b9dff;
+        border: none;
+        cursor: pointer;
+    }
+
+    .social {
+        display: flex;
+        margin-top: -500px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        float: left;
+        position: absolute;
+        padding: 0 5%;
+    }
+    
+    .social a {
+        padding: 15px;
+        color: #2b9dff;
+        font-size: 20px;
+    }
+
+
+
+
+}
+
+@media only screen and (max-width: 600px) {
+   form input,
+   form textarea {
+        display: block;
+        width: 200px;
+        padding: 10px;
+        background-color: white;
+        border: 3px solid #2b9dff;
+        margin: 10px 0;
+        outline: none;
+        font-size: small;
+        color: black;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        transform: translateX(-50%);
+        opacity: .7;
+    }
+    
+    form input:last-child {
+        width: 100px;
+        background-color: #2b9dff;
+        border: none;
+        cursor: pointer;
+    }
+
+    .social {
+        display: flex;
+        margin-top: -350px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        float: left;
+        position: absolute;
+        padding: 0 5%;
+    }
+    
+    .social a {
+        padding: 10px;
+        color: #2b9dff;
+        font-size: 10px;
+    }
+
+    nav {
+        line-height: 100px;
+        text-align: left;
+    }
+    
+    .navcontent a {
+        cursor: pointer;
+        text-decoration: none;
+        color: #2b9dff;
+        font-size: small;
+    }
+    
+    .mission {
+        text-align: left;
+        font-size: small;
+        padding: 0 5%;
+    }
+    
+    .about h1 {
+        font-size: 2rem;
+        text-align: right;
+        opacity: .1;
+        color: #2b9dff;
+        padding: 0 5%;
+    }
+    
+    .services {
+        text-align: middle;
+        font-size: small;
+        padding: 0 5%;
+        margin-top: 50px;
+    }
+    
+    .services ul {
+        text-align: middle;
+        font-size: small;
+        padding: 0 5%;
+        font-style: italic;
+    }
+
+    main{
+        font-size: small;
+    }
+
+
+}
